@@ -36,6 +36,7 @@ const addnote = (text ="") =>{
 
     //funtion for deleting note
     note.querySelector(".trash").addEventListener("click" ,function(){
+        alert("You will loss your Data.");
         note.remove();
         saveNotes();
     })
