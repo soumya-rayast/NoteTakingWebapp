@@ -36,9 +36,18 @@ const addnote = (text ="") =>{
 
     //funtion for deleting note
     note.querySelector(".trash").addEventListener("click" ,function(){
-        alert("You will loss your Data.");
-        note.remove();
-        saveNotes();
+        // alert("You will loss your Data.");
+        // note.remove();
+        // saveNotes();
+        const response = confirm("Are you sure!, You will loss your Notes");
+        if(response){
+            alert("You deleted your notes!")
+            note.remove();
+        }
+        else{
+            alert("You changed your opinion :) ")
+        }
+
     })
     //function for save  notes
     note.querySelector(".save").addEventListener("click",function(){
