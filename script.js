@@ -43,6 +43,7 @@ const addnote = (text ="") =>{
         if(response){
             alert("You deleted your notes!")
             note.remove();
+            saveNotes();
         }
         else{
             alert("You changed your opinion :) ")
